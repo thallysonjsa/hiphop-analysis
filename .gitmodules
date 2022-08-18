@@ -2,9 +2,6 @@
 	path = hiphop/public
 	url = https://github.com/thallysonjsa/thallysonjsa.github.io.git
 	branch = main
-[submodule "hiphop/hiphop/themes/hugo-PaperMod"]
-	path = hiphop/hiphop/themes/hugo-PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "hiphop/themes/hugo-PaperMod"]
 	path = hiphop/themes/hugo-PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
