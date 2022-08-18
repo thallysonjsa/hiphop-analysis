@@ -1,0 +1,46 @@
+<canvas id="joy-chart-1980" width="100px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const joyLabels80 = ["Big Daddy Kane", "Beastie Boys", "Kool Moe Dee", "Public Enemy", "Slick Rick", "LL Cool J", "De La Soul", "Queen Latifah", "Eric B. & Rakim", "Salt-n-Pepa",];
+  const joyData80 = [9, 6, 5, 3, 3, 3, 2, 1, 1, 1];
+  const joy1980 = document.getElementById('joy-chart-1980').getContext('2d');
+  const joy1980Chart = new Chart(joy1980, {
+    type: 'bar',
+    data: {
+      labels: joyLabels80,
+      datasets: [{
+        label: "Top 10",
+        data: joyData80,
+        backgroundColor: 'rgba(45, 147, 173, 1)',
+        borderColor: 'rgba(45, 147, 173, 1)',
+        borderRadius: 10
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: "top"
+        },
+        title: {
+          display: true,
+          text: "1980s - Emoção: Felicidade",
+          font: {
+            size: 20,
+            family: "Helvetica"
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            font: {
+              weight: 600
+            }
+          }
+        }
+      }
+    }
+  });
+</script>

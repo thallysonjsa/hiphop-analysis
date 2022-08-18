@@ -1,0 +1,46 @@
+<canvas id="anger-chart-1980" width="100px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const angerLabels80 = ["N.W.A", "Kool Moe Dee", "Public Enemy", "Beastie Boys", "Eazy-E", "Geto Boys", "Queen Latifah", "Salt-n-Pepa", "Big Daddy Kane", "LL Cool J"];
+  const angerData80 = [12, 12, 11, 9, 8, 8, 7, 6, 6, 4];
+  const anger1980 = document.getElementById('anger-chart-1980').getContext('2d');
+  const anger1980Chart = new Chart(anger1980, {
+    type: 'bar',
+    data: {
+      labels: angerLabels80,
+      datasets: [{
+        label: "Top 10",
+        data: angerData80,
+        backgroundColor: 'rgba(193, 41, 46, 1)',
+        borderColor: 'rgba(193, 41, 46, 1)',
+        borderRadius: 10
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: "top"
+        },
+        title: {
+          display: true,
+          text: "1980s - Emoção: Raiva",
+          font: {
+            size: 20,
+            family: "Helvetica"
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            font: {
+              weight: 600
+            }
+          }
+        }
+      }
+    }
+  });
+</script>

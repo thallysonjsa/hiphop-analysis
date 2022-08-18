@@ -1,0 +1,96 @@
+<canvas id="lyrics-length" width="100px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+
+<script type="module">
+  import * as a from "https://unpkg.com/@sgratzl/chartjs-chart-boxplot@3.6.0/build/index.umd.min.js"
+  let allData = [];
+  d3.csv("../data/lyrics_length.csv", function (data) {
+    const _1980 = JSON.parse(data[0]["arrays"]);
+    const _1990 = JSON.parse(data[1]["arrays"]);
+    const _2000 = JSON.parse(data[2]["arrays"]);
+    const _2010 = JSON.parse(data[3]["arrays"]);
+    allData.push(_1980, _1990, _2000, _2010);
+
+    const lyricsLength = document.getElementById("lyrics-length").getContext('2d');
+    const lyricsLengthChart = new Chart(lyricsLength, {
+      type: 'boxplot',
+      data: {
+        labels: ["1980's", "1990's", "2000's", "2010's"],
+        datasets: [{
+          label: "1980's",
+          data: [
+            allData[0],
+            null,
+            null,
+            null
+          ],
+          backgroundColor: 'rgba(31, 60, 125, 0.5)',
+          borderColor: 'rgba(31, 60, 125, 1)',
+        },
+        {
+          label: "1990's",
+          data: [
+            null,
+            allData[1],
+            null,
+            null
+          ],
+          backgroundColor: 'rgba(79, 53, 155, 0.5)',
+          borderColor: 'rgba(79, 53, 155, 1)',
+        },
+        {
+          label: "2000's",
+          data: [
+            null,
+            null,
+            allData[2],
+            null
+          ],
+          backgroundColor: 'rgba(39, 251, 107, 0.5)',
+          borderColor: 'rgba(39, 251, 107, 1)',
+        },
+        {
+          label: "2010's",
+          data: [
+            null,
+            null,
+            null,
+            allData[3],
+          ],
+          backgroundColor: 'rgba(255, 159, 64, 0.5)',
+          borderColor: 'rgba(255, 159, 64, 1)',
+        }
+        ],
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Tamanho das Músicas por Década',
+            font: {
+              size: 20
+            }
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+            grid: {
+              display: false
+            }
+          },
+          y: {
+            stacked: true,
+            grid: {
+              display: true
+            }
+          }
+        }
+      }
+    })
+  });
+
+
+</script>

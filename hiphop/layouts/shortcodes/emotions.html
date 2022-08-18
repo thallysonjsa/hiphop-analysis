@@ -1,0 +1,68 @@
+<canvas id="emotion-chart" width="100px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const emotionLabels = ["Anger", "Sadness", "Fear", "Surprise", "Joy"];
+  const emotion80Data = [93, 30, 34, 23, 35];
+  const emotion90Data = [605, 190, 191, 155, 129];
+  const emotion00Data = [419, 221, 138, 134, 105];
+  const emotion10Data = [1194, 737, 454, 330, 270]
+  const emotion = document.getElementById('emotion-chart').getContext('2d');
+  const emotionChart = new Chart(emotion, {
+    type: 'bar',
+    data: {
+      labels: emotionLabels,
+      datasets: [{
+        label: "1980",
+        data: emotion80Data,
+        backgroundColor: 'rgba(55, 226, 213, 1)',
+      },
+      {
+        label: "1990",
+        data: emotion90Data,
+        backgroundColor: 'rgba(89, 6, 150, 1)',
+      },
+      {
+        label: "2000",
+        data: emotion00Data,
+        backgroundColor: 'rgba(199, 10, 128, 1)',
+      },
+      {
+        label: "2010",
+        data: emotion10Data,
+        backgroundColor: 'rgba(251, 203, 10, 1)'
+      },
+      ]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: "top"
+        },
+        title: {
+          display: true,
+          text: "Emoções das Músicas por Década",
+          font: {
+            size: 20
+          }
+        }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          grid: {
+            display: false
+          }
+        },
+        y: {
+          stacked: true,
+          grid: {
+            display: true
+          }
+        }
+      }
+    }
+  });
+
+</script>

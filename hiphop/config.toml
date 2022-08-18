@@ -1,0 +1,28 @@
+baseURL = 'https://thallysonjsa.github.io/'
+languageCode = 'en-us'
+title = 'Hip-Hop Analysis'
+theme = 'hugo-PaperMod'
+
+[params]
+author = 'Thallyson Alves'
+
+[params.homeInfoParams]
+Title = "Olá!"
+Content = """
+Este site contém um post referente ao meu Trabalho de Conclusão de Curso. 
+
+Nesse trabalho mostro um estudo sobre a evolução das letras do gênero musical Hip-Hop desde o ínicio da década de 1980 até os dias atuais e faço isso utilizando técnicas de Visualização dos Dados, Processamento de Linguagem Natural e Aprendizagem de Máquina.
+
+Abaixo estão minhas redes sociais, caso queiram entrar em contato! Espero que gostem."""
+
+[[params.socialIcons]]
+  name = 'github'
+  url = "https://github.com/thallysonjsa"
+
+[[params.socialIcons]]
+  name = 'twitter'
+  url = "https://twitter.com/tels1n"
+
+[[params.socialIcons]]
+  name = 'instagram'
+  url = "https://instagram.com/thallysonjsa"

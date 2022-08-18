@@ -1,0 +1,46 @@
+<canvas id="sadness-chart-1980" width="100px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const sadnessLabels80 = ["Eric B. & Rakim", "Beastie Boys", "Kool Moe Dee", "Public Enemy", "De La Soul", "Slick Rick", "LL Cool J", "Queen Latifah", "Salt-n-Pepa", "Big Daddy Kane"];
+  const sadnessData80 = [7, 4, 4, 3, 3, 2, 2, 1, 1, 1];
+  const sadness1980 = document.getElementById('sadness-chart-1980').getContext('2d');
+  const sadness1980Chart = new Chart(sadness1980, {
+    type: 'bar',
+    data: {
+      labels: sadnessLabels80,
+      datasets: [{
+        label: "Top 10",
+        data: sadnessData80,
+        backgroundColor: 'rgba(2, 1, 0, 1)',
+        borderColor: 'rgba(2, 1, 0, 1)',
+        borderRadius: 10
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: "top"
+        },
+        title: {
+          display: true,
+          text: "1980s - Emoção: Tristeza",
+          font: {
+            size: 20,
+            family: "Helvetica"
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            font: {
+              weight: 600
+            }
+          }
+        }
+      }
+    }
+  });
+</script>

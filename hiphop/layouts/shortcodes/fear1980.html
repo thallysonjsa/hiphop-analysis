@@ -1,0 +1,46 @@
+<canvas id="fear-chart-1980" width="100px"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const fearLabels80 = ["Eric B. & Rakim", "LL Cool J", "N.W.A", "Beastie Boys", "De La Soul", "Public Enemy", "Salt-n-Pepa", "Eazy-E", "Big Daddy Kane", "Kool Moe Dee"];
+  const fearData80 = [6, 5, 3, 3, 3, 2, 2, 2, 2, 2];
+  const fear1980 = document.getElementById('fear-chart-1980').getContext('2d');
+  const fear1980Chart = new Chart(fear1980, {
+    type: 'bar',
+    data: {
+      labels: fearLabels80,
+      datasets: [{
+        label: "Top 10",
+        data: fearData80,
+        backgroundColor: 'rgba(90, 90, 90, 1)',
+        borderColor: 'rgba(90, 90, 90, 1)',
+        borderRadius: 10
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: "top"
+        },
+        title: {
+          display: true,
+          text: "1980s - Emoção: Medo",
+          font: {
+            size: 20,
+            family: "Helvetica"
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            font: {
+              weight: 600
+            }
+          }
+        }
+      }
+    }
+  });
+</script>
