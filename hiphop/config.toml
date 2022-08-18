@@ -2,6 +2,7 @@ baseURL = 'https://thallysonjsa.github.io/'
 languageCode = 'en-us'
 title = 'Hip-Hop Analysis'
 theme = 'hugo-PaperMod'
+relativeURLs = "True"
 
 [params]
 author = 'Thallyson Alves'
