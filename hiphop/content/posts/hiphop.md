@@ -78,7 +78,7 @@ Por último, foi realizada uma análise de tópicos com os dados coletados, que 
 
 Os principais tópicos identificados pelo modelo contém os principais temas encontrados como foco de discussão no gênero musical. No primeiro exemplo, o tópico 0 retrata assuntos relacionados ao próprio gênero musical, algo que é bastante comum, visto que muitos rappers e mc's costumam fazer batalhas de rimas, mostrando suas habilidades com as palavras, tentando fazer esquemas de rimas mais complexas e vencer o oponente. Dessa forma, vemos algumas palavras mais recorrentes, como “mic”, “rap”, "rhymes" e “mcs”. Outro tema muito comum nas músicas do gênero na época, fazem menção à figura da mulher de maneiras diferentes, podendo ser um provável contexto de relacionamentos amorosos ou até chegando a realizar comentários misóginos, machistas e de objetificação feminina. Isso é perceptível nos tópicos 1, 12 e 13 que têm como palavras mais frequentes “girl”, “hoes”, “sex”, “feeling”, “love” e “baby”.
 
-grafico
+{{< topics_90s >}}
 
 Os tópicos 4 e 5 mostram uma face mais intensa da realidade retratada nas músicas de rap, temas mais agressivos que tratam da violência e do crime enfrentados no cotidiano dos jovens das periferias das grandes cidades, principalmente na década de 1990, onde a cena do gangsta rap ficou mais evidente. Além disso, foi o momento em que houve a ascensão dos conflitos entre Bloods e Crips e da briga entre a Costa Oeste e Costa Leste, sendo representadas pelos rappers 2Pac e The Notorious B.I.G, respectivamente. Palavras como “murder”, “die”, “thugs”, “gun” e “war” estão presentes.
 
@@ -88,7 +88,7 @@ O tópico 7 contém um tema mais religioso, trazendo a presença de palavras com
 
 Em relação aos tópicos encontrados nas canções da década de 2000, pouca coisa mudou no que diz respeito à temática abordada nas letras das músicas. Assim como os primeiros tópicos dos dados da década de 1990, o tópico 0 retrata um pouco dos temas que falam sobre o próprio gênero musical e também sobre a questão do gangsta rap, onde palavras como “gangsta”, “rap”, “hiphop”, “life”, e “game” estão presentes.  O tópico 1 já traz um tema mais triste, girando em torno de palavras que retratam a realidade da vida de quem compõe as músicas, onde palavras como “cry”, “pain”, “life” e “hell” aparecem. Os tópicos 5 e 8 se assemelham aos tópicos 1, 12 e 13 da década anterior, que retratam temas de prováveis relacionamentos amorosos e à sexualidade, onde palavras como “girl”, “shawty”, “baby”, “love” e “sexin” aparecem.
 
-grafico
+{{< topics_00s >}}
 
 Outro tema abordado é mostrado no tópico 6, trazendo a representação do ambiente em que a realidade retratada nas canções é vivida, tanto para falar sobre o orgulho de sua origem, quanto também para exibir os problemas que permeiam a região. Neste tópico encontramos palavras como “ghetto”, “home”, “hood”, “block” e “people”. Por fim, o tópico 9, possui um conteúdo de crítica ao sistema e ao governo, sendo inclusive um dos temas mais abordados pelo rapper *Immortal Technique*, conhecido pela sua técnica apurada e por tratar de assuntos como  a pobreza, o racismo, além dos temas previamente citados. As próprias palavras “immortal” e “technique” fazem parte das palavras mais encontradas neste tópico. Outra palavras encontradas são “world”, “truth”, “government” e “freedom”.
 
